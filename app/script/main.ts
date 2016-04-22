@@ -1,9 +1,6 @@
-import {Component} from 'angular2/core';
+import {bootstrap}        from 'angular2/platform/browser';
+import {ROUTER_PROVIDERS} from 'angular2/router';
 
-@Component({
-    selector: 'app',
-    template: '<div>go for it...</div>'
-})
-export class AppComponent {
-    title = 'Notification Message Center';
-}
+import {AppComponent}     from './app';
+
+bootstrap(AppComponent, [ROUTER_PROVIDERS]);
